@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DemoMVP</string>
+    <string name="label_user_name">Username</string>
+    <string name="label_password">Password</string>
+    <string name="label_login">Login</string>
+    <string name="label_welcome">Welcome</string>
+    <string name="label_login_fail">Login fail</string>
+    <string name="label_error_pass">Password error or empty!</string>
+    <string name="label_error_name">User name error or empty!</string>
+    <string name="tv_name">Name:</string>
+    <string name="tv_age">Age:</string>
+</resources>

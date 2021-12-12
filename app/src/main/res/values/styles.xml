@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextDetail">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="LabelTextDetail" parent="TextDetail">
+        <item name="android:textStyle">italic|bold</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="LabelTextItem" parent="LabelTextDetail">
+        <item name="android:textSize">13sp</item>
+    </style>
+</resources>
