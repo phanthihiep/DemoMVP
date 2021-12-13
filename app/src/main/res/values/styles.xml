@@ -15,4 +15,10 @@
     <style name="LabelTextItem" parent="LabelTextDetail">
         <item name="android:textSize">13sp</item>
     </style>
+
+    <style name="TextButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_width">120dp</item>
+    </style>
 </resources>

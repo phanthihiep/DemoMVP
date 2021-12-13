@@ -1,5 +1,6 @@
 package com.example.demomvp.view
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -20,6 +21,11 @@ class HomeActivity: AppCompatActivity(), HomeView, OnClickItemPerson {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_home)
+    }
+
+    override fun onResume() {
+        super.onResume()
+
         homePresenter = HomePresenter(this, this)
     }
 
@@ -34,5 +40,10 @@ class HomeActivity: AppCompatActivity(), HomeView, OnClickItemPerson {
 
     override fun onClickItem(id: Long?) {
         Toast.makeText(this, id.toString(), Toast.LENGTH_SHORT).show()
+        if (id != null) {
+            val intent = Intent(this, DetailActivity::class.java)
+            intent.putExtra("Id", id)
+            startActivity(intent)
+        }
     }
 }

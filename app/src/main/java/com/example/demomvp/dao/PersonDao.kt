@@ -9,7 +9,7 @@ import com.example.demomvp.model.Person
 @Dao
 interface PersonDao {
     @Query("SELECT * FROM person WHERE id = :id")
-    fun getPerson(id: Int): Person
+    fun getPerson(id: Long): Person
 
     @Query("SELECT * from person")
     fun getPersonAll(): List<Person>

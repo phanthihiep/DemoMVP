@@ -25,4 +25,12 @@ class HomePresenter(context: Context, var homeView: HomeView): PersonCallback {
     override fun getListPerSon(list: ArrayList<Person>) {
         homeView.listPerson(list)
     }
+
+    override fun personWithId(person: Person?) {
+        // no-ops
+    }
+
+    override fun deleteSuccess() {
+        // no-ops
+    }
 }

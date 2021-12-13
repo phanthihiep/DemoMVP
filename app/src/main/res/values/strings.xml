@@ -9,4 +9,5 @@
     <string name="label_error_name">User name error or empty!</string>
     <string name="tv_name">Name:</string>
     <string name="tv_age">Age:</string>
+    <string name="btn_delete">Delete</string>
 </resources>
